@@ -12,6 +12,10 @@ h1 {
 	font-size: 15px;
 }
 
+#name {
+	font-size: 20px;
+}
+
 #essay {
 	padding-left: 50px;
 	width: 50%;
