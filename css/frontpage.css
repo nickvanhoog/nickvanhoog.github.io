@@ -23,6 +23,17 @@ li {
 	padding: 0;
 }
 
+.cover_img {
+	margin: 0 auto;
+	margin-top: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../assets/tower.png");
+	height:200px;
+	width: 200px;
+}
+
 #essay {
 	padding-left: 50px;
 	width: 50%;
