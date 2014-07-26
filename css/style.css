@@ -1,19 +1,15 @@
 body {
 	background-color: #FFFFB2;
 	font-family: "Georgia", Times, serif;
-	padding-left: 	
 }
 
 body a {
 	font-family: "Courier New", Times, serif;
 }
 
-h1 {
-	font-size: 15px;
-}
-
 #name {
-	font-size: 20px;
+	text-align: center;
+	/*font-size: 20px;*/
 }
 
 #essay {

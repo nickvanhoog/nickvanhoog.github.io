@@ -1,0 +1,40 @@
+body {
+	background-color: #FFFFB2;
+	font-family: "Georgia", Times, serif;
+	text-align: center;
+}
+
+body a {
+	font-family: "Courier New", Times, serif;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0 10px;
+	margin: 5px 0 0 0;
+}
+
+li {
+	padding: 0;
+}
+
+.cover_img {
+	margin: 0 auto;
+	margin-top: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../assets/tower.png");
+	height:200px;
+	width: 200px;
+}
+
+#essay {
+	padding-left: 50px;
+	width: 50%;
+}
