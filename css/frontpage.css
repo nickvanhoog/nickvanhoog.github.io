@@ -4,8 +4,9 @@ body {
 	text-align: center;
 }
 
-body a {
-	font-family: "Courier New", Times, serif;
+a:link, a:visited, a:hover, a:active {
+	color: black;
+	text-decoration: underline;
 }
 
 h2 {
@@ -37,7 +38,6 @@ li {
 	border: 5px solid #eefbff;
 }
 
-#essay {
-	padding-left: 50px;
-	width: 50%;
+li {
+
 }
