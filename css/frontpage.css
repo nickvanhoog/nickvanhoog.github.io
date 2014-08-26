@@ -13,6 +13,10 @@ body {
 	font-family: "Courier New", Times, serif;
 }
 
+p {
+	margin-top: 6px;
+}
+
 h2 {
 	padding: 0;
 	margin: 0;
@@ -22,6 +26,10 @@ ul {
 	list-style-type: none;
 	padding: 0 10px;
 	margin: 5px 0 0 0;
+}
+
+#name {
+	margin-bottom: 0px;
 }
 
 li {
