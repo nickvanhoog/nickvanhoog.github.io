@@ -5,6 +5,14 @@
 	padding-top: 100px;
 }
 
+a {
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+	display: block;
+}
+
 img {
 	margin-left: auto;
 	margin-right: auto;
@@ -16,6 +24,7 @@ img {
 hr {
 	background: black;
 }
+
 
 hr.inside {
 	width: 25%;
