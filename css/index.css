@@ -18,19 +18,23 @@ h2 {
 	margin: 0;
 }
 
+.bluebox {
+	margin: 0 auto;
+	width: 100px;
+}
+
 ul {
 	list-style-type: none;
 	padding: 0 10px;
 	margin: 5px 0 0 0;
 }
 
-li {
-	padding: 3px;
+#essay_list li {
+	padding: 0;
 }
 
 .cover_img {
 	margin: 0 auto;
-	margin-top: 10px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
