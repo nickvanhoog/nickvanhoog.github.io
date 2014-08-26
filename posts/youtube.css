@@ -1,0 +1,38 @@
+#center_column {
+	text-align: center;
+	font: Georgia;
+	font-size: 20px;
+	padding-top: 100px;
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+hr {
+	background: black;
+}
+
+hr.inside {
+	width: 25%;
+	height: 2px;
+}
+
+hr.middle {
+	width: 24%;
+	height: 2px;
+}
+
+hr.outside {
+	width: 23%;
+	height: 2px;
+}
+
+/*hr.inside {
+	margin-top: 50px;
+}*/
+
