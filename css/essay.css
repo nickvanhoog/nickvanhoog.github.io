@@ -24,30 +24,8 @@ body a {
 	text-align: left;
 }
 
-.propaganda {
-	font-size: 103%;
-	font-family: "Courier New Bold", Times, serif;
-	background: #C2C2A3;
-}
-
 .author {
 	font-family: "Georgia Bold", Times, serif;
-}
-
-#sparkle_left_1 {
-	font-family: "Courier New Bold", Times, serif;
-	background: #C2C2A3;
-	color: white;
-}
-#sparkle_left_2 {
-	font-family: "Courier New Bold", Times, serif;
-	background: #C2C2A3;
-	color: red;
-}
-#sparkle_left_3 {
-	font-family: "Courier New Bold", Times, serif;
-	background: #C2C2A3;
-	color: blue;
 }
 
 @media(max-width: 500px) {
