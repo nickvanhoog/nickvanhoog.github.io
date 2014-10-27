@@ -38,13 +38,27 @@ function createCoverDescription(album) {
     $.getJSON(theUrl, function(data) {
         var album, artist, albumTitle, imageUrl, newImg, newDiv;
         album = data.album;
+        console.log(album);
         artist = album.artist;
+        albumReleaseDate = album.releasedate.split(',')[0];
+        if (/\S/.test(albumReleaseDate)) {
+            albumReleaseDate = album.releasedate.split(',')[0];
+        }
+        else {
+            albumReleaseDate = 'n/a';   
+        }
         imageUrl = album.image[2]['#text'];
         albumTitle = album.name;
         newDiv = $('<div></div>', {class: 'col-md-2'});
         newImg = $('<img/>', {src: imageUrl});
         newTitle = $('<p></p>');
-        newTitle.text(albumTitle + " by " + artist);
+        albumTypog = $('<b></b>').text(albumTitle); 
+        artistTypog = $('<p></p>').text('by ' + artist);
+        releaseDateTypog = $('<p></p>').text(albumReleaseDate);
+        
+        newTitle.append(albumTypog);
+        newTitle.append(artistTypog);
+        newTitle.append(releaseDateTypog);
         newDiv.append(newImg);
         newDiv.append(newTitle);
         $('#covers').append(newDiv);
