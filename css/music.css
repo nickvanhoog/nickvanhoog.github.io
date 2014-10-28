@@ -5,3 +5,18 @@
 p {
     font-family: 'Arimo', sans-serif;
 }
+
+body {
+    background-image: url(../assets/background2.png);
+/*    color: black;*/
+    padding-top: 15px;
+}
+
+a {
+/*    color: white;*/
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #cfcfcf;   
+}

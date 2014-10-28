@@ -32,13 +32,12 @@ function createCoverDescription(album) {
     var albumTitle, artistName;
     
     albumTitle = album.name;
-    artistName = album.artist['#text'];
+    artistName = album.artist.name;
     
     theUrl = constructUrl({method: 'album.getInfo', artist: artistName, album: albumTitle, format: 'json'});
     $.getJSON(theUrl, function(data) {
         var album, artist, albumTitle, imageUrl, newImg, newDiv;
         album = data.album;
-        console.log(album);
         artist = album.artist;
         albumReleaseDate = album.releasedate.split(',')[0];
         if (/\S/.test(albumReleaseDate)) {
@@ -54,11 +53,9 @@ function createCoverDescription(album) {
         newTitle = $('<p></p>');
         albumTypog = $('<b></b>').text(albumTitle); 
         artistTypog = $('<p></p>').text('by ' + artist);
-        releaseDateTypog = $('<p></p>').text(albumReleaseDate);
         
         newTitle.append(albumTypog);
         newTitle.append(artistTypog);
-        newTitle.append(releaseDateTypog);
         newDiv.append(newImg);
         newDiv.append(newTitle);
         $('#covers').append(newDiv);
@@ -71,12 +68,11 @@ function createCoverDescription(album) {
     var now = new Date().getTime() / 1000;
     var oneWeekAgo = now - secondsInAWeek;
     
-    var weeklyAlbumChartData = {method: 'user.getWeeklyAlbumChart', user: 'nickvanhoog', format: 'json'};
-    $.getJSON(lastfmBaseUrl, weeklyAlbumChartData, function(data) {
+    var monthlyAlbums = {method: 'user.getTopAlbums', user: 'nickvanhoog', limit: 6, period: "1month", format: 'json'};
+    $.getJSON(lastfmBaseUrl, monthlyAlbums, function(data) {
         var i = 0;
         var  numAlbumsProcessed = 0;
-        var albumsRaw = data.weeklyalbumchart.album;
-        var albums = []
+        var albumsRaw = data.topalbums.album;
         while (numAlbumsProcessed < 6) {
             if (albumsRaw[i].artist['#text'] !== 'Fishmans') {
                 createCoverDescription(albumsRaw[i]);
