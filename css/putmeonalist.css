@@ -1,0 +1,9 @@
+body {
+    font-family: "Georgia", Times, serif;
+    text-align: center;
+}
+
+#theList {
+    font-size: 35px;
+    margin-top: 50px;
+}
