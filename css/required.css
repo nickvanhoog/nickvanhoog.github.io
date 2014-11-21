@@ -1,0 +1,37 @@
+body {
+    font-family: "Georgia", Times, serif;
+    text-align: center;
+}
+
+ul {
+    font-size: 25px;
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 450px;   
+}
+
+.bold {
+/*    font-weight: bold;*/
+    background-color: #f5f7f7;
+}
+
+.upvote-hover, .downvote-hover {
+    visibility: hidden;
+}
+
+.upvote {
+    cursor: pointer;
+    color: #27ae60;
+    margin: 5px;
+}
+
+.downvote {
+    margin: 5px;
+    cursor: pointer;
+    color: #c0392b;
+}
