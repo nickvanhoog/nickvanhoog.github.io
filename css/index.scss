@@ -1,0 +1,57 @@
+$background-color:  #fefefe;
+$column-width:      400px;
+$font-color:        #1a1a1a;
+$font-stack:        Palatino;
+$a-font-size:       20px;
+
+body {
+  background-color: $background-color;
+  color: $font-color;
+  font-family: $font-stack;
+}
+
+#column {
+  margin: 0 auto;
+  margin-top: 25px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: $column-width;
+}
+
+header {
+  text-align: center;
+}
+
+.cover_img {
+  background-image: url("../assets/cobblestones.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200px;
+  margin: 0 auto;
+  padding: 0;
+  width: 200px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+#hr-periods {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 10px;
+  margin: 5px 0 0 0;
+}
+
+li {
+  padding: 3px;
+}
+
+a {
+  color: $font-color;
+  font-size: $a-font-size;
+}
