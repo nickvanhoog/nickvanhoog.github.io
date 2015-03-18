@@ -5,7 +5,7 @@ $font-color:           #1a1a1a;
 $font-stack:           Palatino;
 $p-font-size:          20px;
 $blockquote-font-size: 18px;
-$smartphone-width:     768px;
+$smartphone-screen-width:     1000px;
 
 body {
   background-color: $background-color;
@@ -48,18 +48,10 @@ blockquote {
   padding: 10px;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+@media (max-width: $smartphone-screen-width) {
   #column {
     margin-left: 5px;
     margin-right: 5px;
     width: $smartphone-col-width;
   }
 }
-
-// @media (max-width: $smartphone-width) {
-//   #column {
-//     margin-left: 5px;
-//     margin-right: 5px;
-//     width: $smartphone-col-width;
-//   }
-// }
