@@ -48,10 +48,18 @@ blockquote {
   padding: 10px;
 }
 
-@media (max-width: $smartphone-width) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   #column {
     margin-left: 5px;
     margin-right: 5px;
     width: $smartphone-col-width;
   }
 }
+
+// @media (max-width: $smartphone-width) {
+//   #column {
+//     margin-left: 5px;
+//     margin-right: 5px;
+//     width: $smartphone-col-width;
+//   }
+// }
