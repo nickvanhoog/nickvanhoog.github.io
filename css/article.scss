@@ -1,9 +1,11 @@
 $background-color:     #fefefe;
-$column-width:         600px;
+$desktop-col-width:         600px;
+$smartphone-col-width: 100%;
 $font-color:           #1a1a1a;
 $font-stack:           Palatino;
 $p-font-size:          20px;
 $blockquote-font-size: 18px;
+$smartphone-width:     768px;
 
 body {
   background-color: $background-color;
@@ -15,7 +17,7 @@ body {
   margin: 0 auto;
   padding-bottom: 15px;
   padding-top: 15px;
-  width: $column-width;
+  width: $desktop-col-width;
 }
 
 a {
@@ -35,7 +37,7 @@ h1 {
 p {
   font-size: $p-font-size;
   line-height: 1.3;
-  text-align: justify;
+  text-align: left;
 }
 
 blockquote {
@@ -44,4 +46,12 @@ blockquote {
   font-size: $p-font-size;
   font-style: italic;
   padding: 10px;
+}
+
+@media (max-width: $smartphone-width) {
+  #column {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: $smartphone-col-width;
+  }
 }
